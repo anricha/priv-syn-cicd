@@ -1,0 +1,45 @@
+{
+    "name": "@anricha/priv-syn-cicd",
+    "version": "1.0.11",
+    "description": "",
+    "main": "./dist/api.js",
+    "types": "./dist/api.d.ts",
+    "scripts": {
+        "test": "jest",
+        "clean": "rimraf dist",
+        "lint-and-fix": "eslint . --ext .ts --fix",
+        "lint": "eslint . --ext .ts",
+        "build": "tsc",
+        "deploy": "npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anricha/priv-syn-cicd.git"
+    },
+    "author": "Andrew Richardson",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/anricha/priv-syn-cicd/issues"
+    },
+    "homepage": "https://github.com/anricha/priv-syn-cicd#readme",
+    "devDependencies": {
+        "@types/node": "^10.17.58",
+        "@typescript-eslint/eslint-plugin": "^4.22.0",
+        "@typescript-eslint/parser": "^4.22.0",
+        "eslint": "^7.24.0",
+        "ts-jest": "^26.5.5",
+        "ts-node": "^9.1.1",
+        "tsc": "^1.20150623.0",
+        "typescript": "^4.2.4"
+    },
+    "dependencies": {
+        "azure-pipelines-task-lib": "^3.1.0",
+        "ms-rest": "^2.5.4",
+        "ms-rest-azure": "^3.0.0",
+        "q": "^1.5.1",
+        "throat": "^5.0.0"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    }
+}
